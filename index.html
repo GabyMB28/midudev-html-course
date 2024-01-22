@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="utf-8">
+        <meta name="viewport" content="width=divice-width">
+
+        <title>Portafolio de Gaby </title>
+        
+        <meta name="description" content="Portafolio de Gaby, contiene información basica">
+        
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#09f">
+
+        <meta property="og:title" content="Portafolio de Gaby">
+        <meta property="og:image" content="/images/yo.jpg">
+        <meta property="og:image:alt" content="Una fotografia de Gbay Mendoza "> 
+        
+        <link rel="icon" type="image/jpg" href="/images/yo.jpg">
+        
+        <style>
+            body {
+                background: rgb(206, 236, 255);
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>Gaby Portafolio</h1>
+
+            <nav>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#proyectos">Poryectos</a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+            </nav>
+            
+        </header>
+        
+        <video autoplay src=""></video>
+
+        <main>
+
+            <p> Mi edad es de 24 tengo experiencia como <strong> ingeniera en TIC</strong> y voy aprendiedo </p>
+    
+            <h2 id="experiencia"> Experiencia</h2>
+    
+            <ul>
+                <li class="List-item">2022</li>
+                <li class="List-item">2023</li>
+                <li class="List-item">2024</li>
+            </ul>
+            
+            <a  href="/images/yo.jpg">
+                
+                <img 
+                    id="photo-image"
+                    width="200"
+                    height="200"
+                    title="Foto Gaby"
+                    alt="Gaby balnco negro "
+                    src="/images/yo.jpg"
+                />
+        
+            </a>
+            <h2 id="proyectos">Proyectos Realizados </h2>
+    
+            <aside>
+                <header>
+                    <h3>Mis tecnologías favoritas</h3>
+                </header>
+                <nav>
+                    <ol type="1" reversed start="">
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>
+                            <a href="https://es.react.dev/" target="_blank" rel="noreferrer"> React </a>
+                        </li>  
+                    </ol>
+                </nav> 
+            </aside>
+
+            <button>
+                Haz clic aquí
+            </button>
+
+            <section>
+                <article>
+                    <header>
+                        <h4>Sitio web coorporativo</h4>
+                    </header>
+                    <p>
+                        Desarrollo de un sitio web corporrativo con una interfaz amigable </p>
+                    <footer>
+                        <small>Tu mama esta presa  </small>
+                    </footer>
+                </article>
+            </section>
+    
+            <section>
+                <article>
+                    <header>
+                        <h4>Sitio web coorporativo</h4>
+                    </header>
+                    <p>
+                        Desarrollo de un sitio web corporrativo con una interfaz amigable </p>
+                    <footer>
+                        <small>Tu mama esta presa  </small>
+                    </footer>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <header>
+                        <h4>Sitio web coorporativo</h4>
+                    </header>
+                    <p>
+                        Desarrollo de un sitio web corporrativo con una interfaz amigable </p>
+                    <footer>
+                        <small>Tu mama esta presa  </small>
+                    </footer>
+                </article>
+            </section>
+
+            <section>
+                <h2>Preguntas frecuentes</h2>
+                
+                <details>
+                    <summary>¿Qué Estudias?</summary>
+                    <p>Estudio ingeniera en TIC en la unversidad más vaga y mala del Ecuador</p>
+                </details>
+
+                  
+                <details>
+                    <summary>¿Cuál es tu lenguaje favorito?</summary>
+                    <p> Hacer raskinball cuando estoy desocupada</p>
+                </details>
+
+                  
+                <details>
+                    <summary>¿Por qué tu mamá está presa?</summary>
+                    <p>Buena pregunta, hasta yo quiero saber estimado</p>
+                </details>
+            </section>
+
+            <section>
+                <h2>Formulario</h2>
+
+                <form method="post" action="/">
+                    <fieldset>
+                        <legend>Información Personal</legend>
+    
+                        <label style="display: block">Nombre: 
+                            <input type="text" name="name" placeholder="Gaby Mendoza" required>
+                        </label>
+    
+                        <label>Email: 
+                            <input type="email" name="email" placeholder="gmmb28@gmail.com" required>
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend> Informacion Adiconal </legend>
+                        <label>Telefono <input type="tel" name="name" placeholder="09886757" pattern="[0-9]
+                            {9}" required>
+                        </label>
+                    </fieldset>
+
+                    
+                    <fieldset>
+                        <legend>Otros</legend>
+                        <label for="why">¿Por qué quieres contratar?</label>
+                        <select name="why" id="why" style="display: block;">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Duda</option>
+                            <option value="3">Más Informacion</option>
+                        </select>
+
+                        <div>    
+                        <label for="terms">Aceptas los terminos?</label>
+                        <input type="checkbox" name="terms" id="terms" required>  
+                        </div>
+
+                        <div>
+                            <datalist id="languages">
+                                <option value="Java"></option>
+                                <option value="Python"></option>
+                                <option value="C#"></option>
+                            </datalist>
+                            <label > Con que lenguaje te indetificas? <input  list="languages" name="languages"></label>
+                        </div>
+
+                    </fieldset>
+                    <button type="submit"> Enviar Contacto</button>
+
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            Copyright @2024
+
+            <a href="mailto:gmmb28@gmail.com">Enviame un correo</a>
+            <a href="tel:0478234678">Llamame por telefono </a>
+            <a href="whatsapp://send">Contactame por Whatsapp</a>
+
+        </footer>
+
+
+    </body>
+
+
+</html>
