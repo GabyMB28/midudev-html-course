@@ -17,12 +17,105 @@
         <meta property="og:image:alt" content="Una fotografia de Gbay Mendoza "> 
         
         <link rel="icon" type="image/jpg" href="/images/yo.jpg">
-        
+
         <style>
-            body {
-                background: rgb(206, 236, 255);
+            h1 {
+              color:blueviolet; /* declaracióm*/
+              /*color: rgba(0, 0, 0, 50%)  /* Legaci*/
+              /*color: rgb(0 0 0 /50%)  /* moderno*/
+              /*color: hsl(0, 100%, 50%) */
+              /*color: oklch( 348 83% 44%/ 50%)  /* Legaci*/
+              /*border-width: 3px; /*borde*/
+              /*border-style: solid; */
+              /*border-color: currentColor;  /*obtiene ek mismo color*/
+              font-family: monospace ;
             }
+
+            body {
+                 background: #bfdfdf;
+                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+                 Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .link {
+                color:rgb(0, 0, 0);
+            }
+
+            .link:hover {
+                outline: 3px solid #09f;
+
+            }
+            .link:active {
+                outline: 3px solid rgb(117, 117, 117);
+            }
+
+            input {
+                border-radius: 3px;
+                border: 0;
+                outline: 0;
+                height: 20px;
+                width: 150px;
+                box-sizing: border-box;
+            }
+
+            input:focus, 
+            input:hover,
+            input:active {
+                border: .75px solid #09f;
+                outline: .75px solid #09f;
+               cursor: help; 
+            }
+
+            /* input:focus-visible {
+                border: 3px solid #09f;
+            } */
+
+            #openDialog {
+               background: #09f;
+               color: white;
+               border: 0;
+
+            }
+           /* .description {
+                border: 1px solid rgb(0, 0, 0);
+            }*/
+
+            li:first-child {
+                color: pink;
+            }
+
+            li:last-child {
+                color:blueviolet;
+            }
+
+            /* p {
+                font-size: 18px;
+            } */
+            /* .primary .bold {
+                color: #09f;
+            }
+            .secundary .bold {
+                color: brown;
+            }
+            ul {
+                font-size: 18px;
+            }
+            ul > .lista {
+                opacity: 70%;
+                color: black;
+            }
+              */
+
+              article {
+                font-size: 19px;
+              }
+
+              article p {
+                color: #09f;
+              }
+
         </style>
+  
 
 
     </head>
@@ -34,18 +127,62 @@
             <h1>Gaby Portafolio</h1>
 
             <nav>
-                <a href="#experiencia">Experiencia</a>
-                <a href="#proyectos">Poryectos</a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+                <a class="link" href="#experiencia">Experiencia</a>
+                <a class="link" href="#proyectos">Poryectos</a>
+                <a class="link" href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
             </nav>
             
         </header>
-        
-        <video autoplay src=""></video>
+
+        <article>
+            <p class="primary">Joven emprendedor <strong class="bold">vende mary</strong> a buen precio 
+            <strong class="bold">en la uni</strong>
+
+            <footer>
+                <p>Universidad de la vida</p>
+            </footer>
+
+        </article>
+
+        <!-- <p class="primary">Joven emprendedor <strong class="bold">vende mary</strong> a buen precio 
+            <strong class="bold">en la uni</strong>
+        </p>
+        <p class="secundary">Joven emprendedor <strong class="bold">vende mary</strong> a buen precio 
+            <strong class="bold">en la uni</strong>
+        </p>
+
+        <ul>
+            <li class="lista">itema 1</li>
+            <li class="lista">itema 1</li>
+            <li class="lista">itema 1</li>
+            <ul>
+                <li class="lista">sub item</li>
+                <li class="lista">sub item</li>
+                <li class="lista">sub item</li> 
+            </ul>
+        </ul> -->
+    
+            
+
+        <dialog id="dialog">
+            <h1> Sabias que puedes abriri una modal así?</h1>
+            <p> Y es totalmente nativo </p>
+            <button id="closeDialog">Cerrar Modal</button>
+        </dialog>
+        <button id="openDialog">Ver mas información</button>
+        <script>
+             window.openDialog.addEventListener('click', () => {
+                window.dialog.showModal()
+              })
+              window.closeDialog.addEventListener('click', () => {
+                window.dialog.close()
+              })
+        </script>
+
 
         <main>
 
-            <p> Mi edad es de 24 tengo experiencia como <strong> ingeniera en TIC</strong> y voy aprendiedo </p>
+            <p class="description"> Mi edad es de 24 tengo experiencia como <strong> ingeniera en TIC</strong> y voy aprendiedo </p>
     
             <h2 id="experiencia"> Experiencia</h2>
     
